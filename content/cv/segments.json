@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Education",
+    "entries": [
+      {
+        "title": "Friedrich-Schiller-Universität Jena (FSU)",
+        "location": "Thüringen, Germany",
+        "from": "09/2003",
+        "to": "09/2004",
+        "description": "Fakultät für Chemie 5.S/6.S"
+      },
+      {
+        "title": "University of Granada",
+        "position": "UGR",
+        "location": "Granada, Spain",
+        "from": "09/1998",
+        "to": "09/2004",
+        "description": "MSc in Chemistry"
+      },
+      {
+        "title": "Polymers Materials Technology ",
+        "position": "UNED",
+        "location": "Madrid, Spain",
+        "from": "07/2006",
+        "to": "07/2009"
+      }
+    ]
+  },
+  {
+    "title": "Experiences",
+    "entries": [
+      {
+        "title": "EV Manufacturing",
+        "position": "Supply Chain",
+        "location": "BRB, Germany",
+        "from": "10/2021",
+        "to": "today",
+        "description": "Working smart to keep production running to full capacity. Components development and qualification activities at suppliers."
+      },
+      {
+        "title": "Lighting technologies",
+        "position": "Development",
+        "location": "NRW, Germany",
+        "from": "10/2012",
+        "to": "09/2021",
+        "description": "Developing exterior lighting applications based on intensive usage of electronics, embedded systems and LED solutions."
+      },
+      {
+        "title": "Visibility Systems",
+        "position": "Manufacturing",
+        "location": "AND, Spain",
+        "from": "09/2004",
+        "to": "09/2012",
+        "description": "Monitor and Control the conformity on development processes of all quality activities according to project planning."
+      },
+      {
+        "title": "Analytical Instruments",
+        "position": "Product Management",
+        "location": "TÜR, Germany",
+        "from": "02/2004",
+        "to": "08/2004",
+        "description": "Analytical Instruments development. Elemental Analyzers - C/N/S/Cl. TOC - Total Organic Carbon analyzers. TOX - Total Organic Halides."
+      }
+    ]
+  }
+]

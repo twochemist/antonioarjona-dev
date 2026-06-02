@@ -1,0 +1,85 @@
+[
+  {
+    "title": "Expertise",
+    "entries": [
+      {
+        "title": "Project Management"
+      },
+      {
+        "title": "Quality Planning"
+      },
+      {
+        "title": "Electronics"
+      },
+      {
+        "title": "Material Engineering"
+      },
+      {
+        "title": "Laboratory techniques"
+      }
+    ]
+  },
+  {
+    "title": "Software",
+    "entries": [
+      {
+        "title": "Google Workspace"
+      },
+      {
+        "title": "Microsoft 365"
+      },
+      {
+        "title": "Sketch"
+      },
+      {
+        "title": "Figma"
+      },
+      {
+        "title": "Zapier"
+      }
+    ]
+  },
+  {
+    "title": "Development",
+    "entries": [
+      {
+        "title": "JavaScript"
+      },
+      {
+        "title": "Vue.js"
+      },
+      {
+        "title": "SAPUI5"
+      },
+      {
+        "title": "HTML5/CSS3"
+      },
+      {
+        "title": "Git"
+      },
+      {
+        "title": "Python"
+      },
+      {
+        "title": "SQL"
+      },
+      {
+        "title": "C++"
+      }
+    ]
+  },
+  {
+    "title": "Language",
+    "entries": [
+      {
+        "title": "Spanish (native)"
+      },
+      {
+        "title": "German (fluent)"
+      },
+      {
+        "title": "English (fluent)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+html
+  overflow-y: scroll
+  background: $color-light
+
+body
+  font-family: Open Sans, Helvetica Neue, Arial, sans-serif
+  color: $color-primary
+  background: $color-light
+  font-size: 1.2rem
+  line-height: 1.75
+  font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+  @media (prefers-color-scheme: dark)
+    color: $color-light
+    background: $color-dark
+
+::selection
+  background: rgba($color-accent, .2)
+
+img
+  max-width: 100%
+
+a
+  color: inherit
+
+.center-center
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: center
+  align-content: center
+  align-items: center
+  width: 100%
+  height: 100%
+
+.row-space-between
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: space-between
+  align-content: flex-start
+  align-items: flex-start
+  width: 100%
+  @media screen and (max-width: $breakpoint-mobile)
+    flex-direction: column
+    justify-content: flex-start

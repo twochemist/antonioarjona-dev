@@ -1,0 +1,30 @@
+title: Digital Tools
+description: Developer resources.
+image: /lists/digital_tools/main.png
+entries:
+  - title: VS Code
+    extra: Code Editor
+    description: VS Code as my first editor.
+    logo: /lists/digital_tools/vscode.svg
+    url: https://code.visualstudio.com/
+  - title: iPIN
+    description: Password manager.
+    logo: /lists/digital_tools/enpass.svg
+    url: https://www.enpass.io/
+  - title: Dropbox
+    description: Backup for my archives.
+    logo: /lists/digital_tools/dropbox.svg
+    url: https://dropbox.com
+  - title: Figma
+    description: Vector tool friendly to use.
+    logo: /lists/digital_tools/figma.svg
+    url: https://www.figma.com/
+  - title: Webstorm
+    description: When working with PHP projects.
+    logo: /lists/digital_tools/webstorm.svg
+    url: https://www.jetbrains.com/webstorm/
+  - title: Notion
+    description: "Personal organizizer for links, ideas and tasks."
+    logo: /lists/digital_tools/notion.svg
+    url: https://notion.so
+

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Antonio Arjona</title>
+        <link>https://antonioarjona.dev/posts</link>
+        <description>Get to know me, my projects and some of my ideas.</description>
+        <lastBuildDate>Sat, 22 May 2021 19:46:41 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <link>https://antonioarjona.dev/posts/almost-free-setup-for-ngos-startups-and-side-projects</link>
+            <guid>https://antonioarjona.dev/posts/almost-free-setup-for-ngos-startups-and-side-projects</guid>
+            <pubDate>Wed, 09 Dec 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[DYOR Maker]]></description>
+            <content:encoded><![CDATA[<h1 id="dyor-rover">DYOR Rover</h1>
+<h2 id="objective">Objective</h2>
+<p>This project focuses on the design, development and manufacturing of a rover that can autonomously navigate covering aspects such as control, sensorization, programming and planning of robotic systems. The DYOR robot follows a very basic approach and it is dependent on ultrasonic sensors and a digital compass with Arduino. The robot is a standalone system and the autonomous navigation is done by the onboard controller. The methodology implemented is commonly used in robotic and informatics.</p>
+<h2 id="summary">Summary</h2>
+<p>HW Aduino Nano v3.0 together with its expansion board with the main advantage to offer rows with pins connected to +5V and 0V, which allow directly connect more sensors and actuators, otherwise it would be needed the breadboard to connect +5V and GND pins.</p>
+<p>The Nano v3.0 has 14 Digital-Inputs/Outputs and 8 Analog-Inputs. Some pins can offer an extended feature for serial communication through USB. I support features to control motors with PWM signals, switches or optical sensors and I2C / SPI to communicate with external devices.</p>
+<h2 id="code">Code</h2>
+<p>This is some used <code>Code()</code> </p>
+<p>Servo object control </p>
+<pre><code>#include &lt;Servo.h&gt; 
+Servo myservo1;
+Servo myservo2;</code></pre>
+<p>Servo spin</p>
+<pre><code>void setup() {
+  Serial.begin(9600);
+  myservo1.attach(8);
+  myservo2.attach(9);
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  pinMode(3, OUTPUT);
+}</code></pre>
+<p>Distance stop, Control motors and wheels spin time</p>
+<pre><code>void loop() {
+  digitalWrite(trigPin, HIGH);
+  _delay_ms(500);
+  digitalWrite(trigPin, LOW);
+  duration = pulseIn(echoPin, HIGH);
+  distance = (duration/2) / 29.1;        
+  if (distance &lt; 40) { 
+    digitalWrite(3, HIGH);
+    myservo1.write(n); 
+    myservo2.write(180-n);
+   delay(1000);  
+   myservo1.write(n);
+   myservo2.write(90-n);
+   delay(500);
+}</code></pre>
+<p>Waiting Mode</p>
+<pre><code>  else { // waiting mode
+    digitalWrite(3, LOW);
+    myservo1.write(180-n);
+    myservo2.write(n);
+}
+}</code></pre>
+<h2 id="features">Features</h2>
+<ul>
+<li>Arduino Uno board</li>
+<li>Ultrasonic Distance Sensor - HC-SR04</li>
+<li>HC-05 Wireless Bluetooth RF </li>
+<li>Jumper Wires Generic Male/Male </li>
+<li>LED generic</li>
+<li>Wheel kit </li>
+<li>Powerbank </li>
+<li>Wood chassis</li>
+<li>Hot glue gun</li>
+<li>Android App Inventor2</li>
+<li>TinkerCAD</li>
+<li>Schematics Fritzing</li>
+</ul>
+<h2 id="backstory">Backstory</h2>
+<p>DYOR robot is the Hello World to robotics arena. Working with this board helped me with in-depth understanding of Microcontroller’s architecture and ARM architecture. </p>
+<p>This is suitable to develop quick embedded applications with sophisticated libraries, APIs and Arduino development environment.</p>
+<p>CAD Design | Digital Manufacturing | Electronic assembly | Robotic Programming</p>
+<p>Tutored by Dr. Leopoldo Armesto from the Universitat Politècnica de Valencia (Spain)</p>
+<p><a href="https://unsplash.com/photos/zP7X_B86xOg" rel="some text"><img src="/resources/_gen/images/dyor1.PNG" alt="" /></a></p>
+<p><img src="https://source.unsplash.com/fZB51omnY_Y" alt="&#39;Arduino&#39;"></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <link>https://antonioarjona.dev/posts/docker-compose-for-nextcloud-with-traefik-2-ssh</link>
+            <guid>https://antonioarjona.dev/posts/docker-compose-for-nextcloud-with-traefik-2-ssh</guid>
+            <pubDate>Fri, 23 Oct 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Embedded Software Testing.]]></description>
+            <content:encoded><![CDATA[<h1 id="software-testing">Software Testing</h1>
+<p>The end of product development is where testing typically occurs, but the first cut if the project run late. Opposite to any kind of engineering discipline where testing is considered fundamental, the code inspection is the last steps in software development. </p>
+<p>After checking the requirements, create a high level design, write the code and perform a couple of unit testing and integrations, then is time to perform final tests. This is a critical step until the end of the project and it would be better to do it progressive, rather than wait until the end. </p>
+<p>An embedded software is custom with a high percentage of new code, this is not a standard platform where it can be used external libraries. Unlike in software, the firmware has to be debugged and tested in several stages, as this need to work with hardware and memory map of the device. </p>
+<h2 id="functional-tests">Functional Tests</h2>
+<ul>
+<li>Stress tests</li>
+<li>Booundary tests</li>
+<li>Exception tests</li>
+<li>Error guessing</li>
+<li>Random tests</li>
+<li>Performance tests</li>
+</ul>
+<p>Testing can be integrated in Scrum Sprints to secure the verification, integration and qualification.
+Bugs are inevitable in embedded systems and it should be the challenge of software engineers to mitigate them during the project, whatever it cost or how complex the implementation will be. It will save you headaches and money down the road.</p>
+<pre><code class="language-javascript">// if statement without an else part
+if (condition is true)
+{
+&lt; then do these statements &gt;;
+}
+&lt; code following elseless if &gt;
+if (A | | B)
+{
+&lt; then do these statements &gt;;
+}</code></pre>
+<h2 id="assembly-languages">Assembly languages</h2>
+<p>ARM and x86 are the most popular one.</p>
+<h2 id="recap">Recap</h2>
+<p>If you want to control the quality of your software, you have to measure the quality of your testing. </p>
+<p><img src="https://source.unsplash.com/LKsHwgzyk7c" alt="&#39;Arduino&#39;"></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <link>https://antonioarjona.dev/posts/adding-github-actions-for-testing-linting-to-all-my-repositories</link>
+            <guid>https://antonioarjona.dev/posts/adding-github-actions-for-testing-linting-to-all-my-repositories</guid>
+            <pubDate>Fri, 13 Nov 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Software Development.]]></description>
+            <content:encoded><![CDATA[<h1 id="automotive-spice">Automotive SPICE</h1>
+<p>If you don&#39;t work in the Automotive Industry, ASPICE won&#39;t tell you most probably anything.
+Even for people within the industry not working in software development would be pretty unknown.</p>
+<p>Well, this standard is established as a reference model to standardize the vehicle functionality and its reliability by introducing high complex software system to ensure the development and manufacturing in time and quality. If you are an electronic engineer, it might seem like the standard used for circuit analysis SPICE. </p>
+<p>SPICE is derived initially from the ISO15504/33002 and reworked by the VDA QMC working group 13. It is no more than a bunch of guidelines on how to keep a software project manageable within a life cycle.</p>
+<p>There are 16 processes clustered, here are mentioned the directly related to:</p>
+<ul>
+<li>Software <ul>
+<li>[x]Requirements Analysis</li>
+<li>[x]Architectural Design</li>
+<li>[x]Detailed Design and Unit Construction</li>
+<li>[x]Unit Verification</li>
+<li>[x]Integration and Integration Test</li>
+<li>[x]Qualification Test</li>
+</ul>
+</li>
+</ul>
+<p>ASPICE has a high level of abstraction and doesn’t describe process to any concrete ALM lifecycle model like V- or Waterfall model.</p>
+<p>Independently whether an Agile (Scrum/Kanban) or Non-Agile development is used, it has to ensure that the product delivered fulfill the customer requirements, architecture, design, source code and black/white box test cases free of bugs.</p>
+<p>There are several certification levels, the level 1 will rate that your developer toolset work properly in your current project but not assure the scalability and support for the next one. If bugs are reported, for example, when a new sensor comes out the toolset should integrate the new functions to patch it. This is when the level 2 is demonstrated. </p>
+<p>At the end it reflexes how a company operates efficiently rather than how well the software performs.</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <link>https://antonioarjona.dev/posts/my-perfect-homeoffice-conference-call-and-podcasting-setup</link>
+            <guid>https://antonioarjona.dev/posts/my-perfect-homeoffice-conference-call-and-podcasting-setup</guid>
+            <pubDate>Sun, 10 Jan 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Overview of EMC Testing & Setup.]]></description>
+            <content:encoded><![CDATA[<h1 id="emc-testing">EMC Testing</h1>
+<p>In the Automotive, as in many other Industries, the developed systems and devices must not be interfered by surrounding electromagnetic fields. After an EMC test is conducted, a test report is written. Understand the content isn&#39;t an easy task. 
+There are several factors that we need to understand firstly. The combination of frequencies involved, dimensions of the components, the wiring harnesses and the assembly conditions can influence the test results. </p>
+<p>To understand at a glance what EMC is, let&#39;s explain the three coupling mechanisms:</p>
+<ul>
+<li><p>Radiated path - involving Radiated Emissions (RE) and Radiated Immunity (RI) - µV or dB </p>
+</li>
+<li><p>Conducted path - involving Conducted Emissions (CE) and Conducted Immunity (CI) - µV or dB </p>
+</li>
+<li><p>ESD path - involving a combination of both Radiated and Conducted paths- kV</p>
+</li>
+</ul>
+<h2 id="practical-examples">Practical examples</h2>
+<p>(RE) typical example of emission is a DC motor when its wiring harness are transmitting like an antenna.</p>
+<p>(CE) typical example of immunity is when a system is affecting the reception on AM radio.</p>
+<p>(ESD) typical example of electrostatic discharge is when a component is suffering permanent high voltages.</p>
+<h2 id="analysis-of-test-results">Analysis of Test Results</h2>
+<p>The EMC is measured Anechoic Chambers, but the antennas are the most important items because are the methods to receive and emits signals.
+Another key element is the coaxial cable to transfer the energy. Depending on which conformace is intended to be demostrated, before of all a test plan must be created. An EMC engineer should review the design, the parts, the wiring and the packaging space whithin the system under study.</p>
+<p>The test plan will include:   </p>
+<ul>
+<li>Schematic and layout diagrams</li>
+<li>Wiring harness connectors</li>
+<li>Monitoring equipment </li>
+<li>Test frequencies and level of immunity</li>
+<li>Operating modes with severe conditions</li>
+<li>Production intent software for operating modes</li>
+</ul>
+<h2 id="how-real-are-emc-issues">How real are EMC issues?</h2>
+<p>EMC issues it would experience problems with the electronic control if the system is incompatible with the electromagnetic field environment. </p>
+<h2 id="software-consideration-in-emc">Software consideration in EMC</h2>
+<p>The Firmware/Software is not directly affected for EMC problems, but since they are controlling the switch in µControllers the clock frequencies in combination with the software loops can cause abnormallity in the system. For example, the use of PWM signals to provide different functionalities can generate noise. This frequencies (noise) can be controlled by the software adjusting the signal.  </p>
+<h2 id="electrostatic-discharge---esd">Electrostatic Discharge - ESD</h2>
+<p>Traditioinally the ESD check is introduced later than the EMC study, because we need to understand firstly the conducted and radiated characteristics. ESD can have emissions affecting other components that don&#39;t have enough immunity. The capacitance between surfaces can store a charge, creating a voltage difference with potential discharges. The semiconductor components operate on lower voltages and a damage can happend inf a couple of hundreds of volts come through. The ESD test is normally performed using an ESD gun, which applies high voltages to several wires and connections on the system. </p>
+<h2 id="the-value-of-emc">The Value of EMC</h2>
+<p>Performing EMC tests is a very time consuming process. Analysis on early stages of the project, while layout changes can be implemented on PCBA, is crucial to determina effects of external fields on an electronic system. Passenger vehicles nowadays have around 4 km of wiring and cabling. Make sense to apply particular lessons learned from previous generations.</p>
+<p><img src="https://source.unsplash.com/dacmWVUmux4" alt="&#39;Arduino&#39;"></p>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>

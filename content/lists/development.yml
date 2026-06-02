@@ -1,0 +1,24 @@
+title: Web Technologies
+description: Stack I work with.
+image: /lists/development/main.png
+entries:
+  - title: Vue.js
+    description: "Preferred JS framework."
+    logo: /lists/development/vue.svg
+    url: https://vuejs.org/
+  - title: Nuxt.js
+    description: Build static sites.
+    logo: /lists/development/nuxt.svg
+    url: https://nuxtjs.org/
+  - title: nuxt/content
+    description: CMS for Nuxt.
+    logo: /lists/development/nuxtcontent.svg
+    url: https://content.nuxtjs.org/
+  - title: Netlify
+    description: Deployment of my projects.
+    logo: /lists/development/netlify.svg
+    url: https://www.netlify.com/
+  - title: GitHub Actions
+    description: GitHub for my side projects.
+    logo: /lists/development/githubactions.svg
+    url: https://github.com/features/actions
