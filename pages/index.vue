@@ -2,13 +2,11 @@
   <section class="home-page">
     <div class="hero">
       <div class="hero__content">
-        <p class="eyebrow">Software developer / Creative systems / Germany</p>
-        <h1>Building useful digital products with a maker's eye for detail.</h1>
+        <p class="eyebrow">Software developer / Industrial systems / Germany</p>
+        <h1>Building industrial software for manufacturing excellence.</h1>
         <p class="lede">
-          I am Antonio Arjona, a software developer working across web apps,
-          automation, embedded systems, and visual projects. I connect
-          engineering discipline with hands-on creativity to ship practical,
-          polished experiences.
+          I am Antonio Arjona, a software developer turnning operational data into practical tools,
+          automation, embedded systems and visual projects. Skilled in electronics, manufacturing, and craftsmanship techniques.
         </p>
         <div class="hero__actions" aria-label="Primary links">
           <nuxt-link class="button button--primary" to="/projects">
@@ -21,7 +19,7 @@
       </div>
       <figure class="hero__media">
         <img src="/profil.jpg" alt="Antonio Arjona" />
-        <figcaption>Developer, builder, and automotive art enthusiast.</figcaption>
+        <figcaption>Developer and automotive enthusiast.</figcaption>
       </figure>
     </div>
 
@@ -50,7 +48,7 @@
           <span>01</span>
           <h3>Product websites and web apps</h3>
           <p>
-            Fast, maintainable interfaces with Nuxt, Vue, React, APIs, and
+            Fast, maintainable interfaces with Nuxt, Vue, React, APIs and
             deployment workflows that stay understandable after launch.
           </p>
         </article>
@@ -67,7 +65,7 @@
           <h3>Creative technology</h3>
           <p>
             Software, electronics, and visual experimentation for personal
-            projects, automotive art, and hands-on prototypes.
+            projects and hands-on prototypes.
           </p>
         </article>
       </div>
@@ -80,7 +78,7 @@
       </div>
       <ul class="stack-list">
         <li>JavaScript / TypeScript</li>
-        <li>Vue / Nuxt</li>
+        <li>Vue</li>
         <li>React</li>
         <li>Node.js</li>
         <li>Python</li>
@@ -92,7 +90,7 @@
 
     <section class="closing">
       <div>
-        <p class="eyebrow">Work with me</p>
+        <p class="eyebrow">Collaborations</p>
         <h2>Have a project, prototype, or artwork idea?</h2>
         <p>
           I like projects where technology has a clear purpose: a sharper
@@ -115,7 +113,7 @@ export default {
       const metaData = {
         title: this.globals.title,
         description:
-          'Antonio Arjona is a software developer building web apps, automation, embedded systems, and creative technology projects.',
+          'Antonio Arjona is a software developer building web apps, automation, embedded systems and creative technology projects.',
         url: '/',
         img: '/profil.jpg',
         imgAlt: 'Antonio Arjona',
