@@ -1,21 +1,17 @@
 ---
-title: Zumba Instructor
-img: schmackofatz.png
+title: Manufacturing Operation Intelligence
+img: oee.png
 alt: The map screen of Zumba Fitness activities.
-prio: 0
+prio: 200
 status: 2
 links:
     -
         title: Mockup 1
-        url: https://lydiarodriguez.netlify.app/
-    -
-        title: Mockup 2
-        url: https://lydiazumba.netlify.app/
+        url: 
 responsibilities:
-    - Idea
-    - Concept
-    - Design
-    - Development
+- Industrial Architecture
+- Data Analytics
+- AI Integration
 ---
 
-Web platform to easily get an overview about online fitness activities. This was part of a project to give more visualization for online zumba classes. I focused on the concept, UI & UX, and frontend development.
+The platform connects directly to production equipment, PLCs, and industrial data to calculate Availability, Performance, Quality, and Overall Equipment Effectiveness (OEE). Live machine dashboards, automated downtime classification, bottleneck detection, predictive maintenance insights, operator performance reporting, and AI-powered production analytics.

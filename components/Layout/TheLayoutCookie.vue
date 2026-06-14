@@ -6,8 +6,8 @@
       disagree :)
     </p>
     <div class="buttons">
-      <button class="button" @click="accept()">Accept</button>
-      <button class="button" @click="deny()">Deny</button>
+      <button class="button" type="button" @click="accept">Accept</button>
+      <button class="button" type="button" @click="deny">Deny</button>
     </div>
   </div>
 </template>
@@ -19,27 +19,20 @@ export default {
   name: 'TheLayoutCookie',
   data() {
     return {
-      isOpen: true,
+      isOpen: false,
     }
   },
-  created() {
+  mounted() {
     if (process.browser) {
-      if (this.getGDPR() === 'true') {
-        bootstrap().then((gtag) => {
-          this.isOpen = false
-        })
-      } else if (this.getGDPR() === null) {
-        this.isOpen = true
-      }
+      this.isOpen = this.getGDPR() === null
     }
   },
   methods: {
     accept() {
       if (process.browser) {
-        bootstrap().then((gtag) => {
-          this.isOpen = false
-          this.setGDPR(true)
-        })
+        this.setGDPR(true)
+        this.isOpen = false
+        bootstrap().catch(() => {})
       }
     },
     deny() {

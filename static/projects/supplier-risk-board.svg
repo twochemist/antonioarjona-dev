@@ -1,0 +1,45 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="640" rx="32" fill="#090D12"/>
+  <rect x="38" y="38" width="884" height="564" rx="24" fill="#101820" stroke="#263445" stroke-width="2"/>
+  <rect x="78" y="78" width="804" height="86" rx="16" fill="#182430"/>
+  <text x="112" y="115" fill="#7DD3FC" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">INDUSTRIAL OPERATIONS</text>
+  <text x="112" y="148" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="34" font-weight="700">Supplier Risk Board</text>
+  <rect x="78" y="198" width="180" height="112" rx="14" fill="#141F2A" stroke="#263445"/>
+  <rect x="278" y="198" width="180" height="112" rx="14" fill="#141F2A" stroke="#263445"/>
+  <rect x="478" y="198" width="180" height="112" rx="14" fill="#141F2A" stroke="#263445"/>
+  <rect x="678" y="198" width="204" height="112" rx="14" fill="#141F2A" stroke="#263445"/>
+  <text x="104" y="232" fill="#94A3B8" font-family="Arial, sans-serif" font-size="18">Open Issues</text>
+  <text x="104" y="276" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="42" font-weight="700">7</text>
+  <text x="304" y="232" fill="#94A3B8" font-family="Arial, sans-serif" font-size="18">Critical Suppliers</text>
+  <text x="304" y="276" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="42" font-weight="700">2</text>
+  <text x="504" y="232" fill="#94A3B8" font-family="Arial, sans-serif" font-size="18">Avg Delay</text>
+  <text x="504" y="276" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="42" font-weight="700">2.8d</text>
+  <text x="704" y="232" fill="#94A3B8" font-family="Arial, sans-serif" font-size="18">Parts at Risk</text>
+  <text x="704" y="276" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="42" font-weight="700">89.5k</text>
+  <rect x="78" y="346" width="804" height="198" rx="16" fill="#111A24" stroke="#263445"/>
+  <rect x="78" y="346" width="804" height="48" rx="16" fill="#182430"/>
+  <text x="110" y="376" fill="#94A3B8" font-family="Arial, sans-serif" font-size="15" font-weight="700">SUPPLIER</text>
+  <text x="315" y="376" fill="#94A3B8" font-family="Arial, sans-serif" font-size="15" font-weight="700">ISSUE TYPE</text>
+  <text x="606" y="376" fill="#94A3B8" font-family="Arial, sans-serif" font-size="15" font-weight="700">RISK</text>
+  <text x="730" y="376" fill="#94A3B8" font-family="Arial, sans-serif" font-size="15" font-weight="700">STATUS</text>
+  <line x1="78" y1="442" x2="882" y2="442" stroke="#263445"/>
+  <line x1="78" y1="491" x2="882" y2="491" stroke="#263445"/>
+  <text x="110" y="426" fill="#E2E8F0" font-family="Arial, sans-serif" font-size="17">IberMachined</text>
+  <text x="315" y="426" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="17">Dimensional deviation</text>
+  <rect x="606" y="407" width="82" height="28" rx="14" fill="#EF444426" stroke="#EF444466"/>
+  <text x="623" y="426" fill="#FECACA" font-family="Arial, sans-serif" font-size="14" font-weight="700">Critical</text>
+  <rect x="730" y="407" width="74" height="28" rx="14" fill="#38BDF826" stroke="#38BDF866"/>
+  <text x="752" y="426" fill="#BAE6FD" font-family="Arial, sans-serif" font-size="14" font-weight="700">Open</text>
+  <text x="110" y="475" fill="#E2E8F0" font-family="Arial, sans-serif" font-size="17">Rheinform</text>
+  <text x="315" y="475" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="17">Injection molding flash</text>
+  <rect x="606" y="456" width="62" height="28" rx="14" fill="#F9731626" stroke="#F9731666"/>
+  <text x="623" y="475" fill="#FED7AA" font-family="Arial, sans-serif" font-size="14" font-weight="700">High</text>
+  <rect x="730" y="456" width="104" height="28" rx="14" fill="#A78BFA26" stroke="#A78BFA66"/>
+  <text x="750" y="475" fill="#DDD6FE" font-family="Arial, sans-serif" font-size="14" font-weight="700">Contained</text>
+  <text x="110" y="524" fill="#E2E8F0" font-family="Arial, sans-serif" font-size="17">Bavaria Automation</text>
+  <text x="315" y="524" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="17">Automation downtime</text>
+  <rect x="606" y="505" width="82" height="28" rx="14" fill="#EF444426" stroke="#EF444466"/>
+  <text x="623" y="524" fill="#FECACA" font-family="Arial, sans-serif" font-size="14" font-weight="700">Critical</text>
+  <rect x="730" y="505" width="112" height="28" rx="14" fill="#F59E0B26" stroke="#F59E0B66"/>
+  <text x="749" y="524" fill="#FDE68A" font-family="Arial, sans-serif" font-size="14" font-weight="700">In Progress</text>
+</svg>
