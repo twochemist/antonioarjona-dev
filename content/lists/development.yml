@@ -3,13 +3,21 @@ description: Stack I work with.
 image: /lists/development/main.png
 entries:
   - title: Vue.js
-    description: "Preferred JS framework."
+    description: "JavaScript framework."
     logo: /lists/development/vue.svg
     url: https://vuejs.org/
+  - title: React.js
+    description: "Preferred JavaScript framework."  
+    logo: /lists/development/react.svg
+    url: https://react.dev/
   - title: Nuxt.js
     description: Build static sites.
     logo: /lists/development/nuxt.svg
     url: https://nuxtjs.org/
+  - title: Next.js
+    description: Build static sites.
+    logo: /lists/development/next.svg
+    url: https://nextjs.org/
   - title: nuxt/content
     description: CMS for Nuxt.
     logo: /lists/development/nuxtcontent.svg

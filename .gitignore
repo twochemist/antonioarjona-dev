@@ -1,6 +1,11 @@
 node_modules
+node_modules.nuxt-old
 .nuxt
+.next
 dist
+out
+tsconfig.tsbuildinfo
+supplier-risk-board/
 .DS_Store
 npm-debug.log
 yarn-error.log

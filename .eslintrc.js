@@ -4,8 +4,5 @@ module.exports = {
     browser: true,
     node: true,
   },
-  extends: ['@nuxtjs', 'prettier'],
-  rules: {
-    'vue/max-attributes-per-line': 'off',
-  },
+  extends: ['next/core-web-vitals'],
 }

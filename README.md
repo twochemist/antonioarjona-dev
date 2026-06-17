@@ -5,7 +5,14 @@ This is my [personal website](https://antonioarjona.dev) where I share my [proje
 
 ## Stack
 
-This website is built with [Nuxt.js](https://nuxtjs.org), leveraging [nuxt/content](https://content.nuxtjs.org/) and is hosted on [Netlify](https://www.netlify.com/).
+This website is built with [Next.js](https://nextjs.org), TypeScript, Tailwind CSS, and local Markdown/YAML/JSON content. It is exported as a static site and hosted on [Netlify](https://www.netlify.com/).
+
+Content lives in:
+
+- `content/projects` for portfolio projects
+- `content/posts` for articles
+- `content/lists` for uses/lists pages
+- `content/cv` for CV data
 
 ## Development
 
@@ -16,13 +23,20 @@ $ npm install
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
+# build static production output
 $ npm run build
-$ npm run start
 
-# generate static project
-$ npm run generate
+# Netlify publishes the generated out/ directory
 ```
+
+## Deployment
+
+Netlify should use:
+
+- Build command: `npm run build`
+- Publish directory: `out`
+
+These settings are also defined in `netlify.toml`.
 
 ## License
 

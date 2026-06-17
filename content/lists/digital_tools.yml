@@ -19,7 +19,7 @@ entries:
     description: Vector tool friendly to use.
     logo: /lists/digital_tools/figma.svg
     url: https://www.figma.com/
-  - title: Codex,  Claude Code
+  - title: Claude Code
     description: When working with AI projects.
     logo: /lists/digital_tools/claude-color.svg
     url: https://claude.com/de/product/claude-code?gclsrc=aw.ds&utm_source=google_brand&utm_campaign=def_acq_us_code_search_google-brand_swe_en_claude-code-brand&utm_medium=cpc&utm_content=806769451331&utm_term=claude+code&targetid=kwd-2245239603574&gad_source=1&gad_campaignid=23253558478&gbraid=0AAAAAqwcL8lHbLjiJld0C48uBvfodx2UX&gclid=Cj0KCQjwornRBhCrARIsAON5exFmnAIEjU--c4eXso_BxuXSnhXyIomJeNyYExgjvCKkvwciigW2WdAaAt16EALw_wcB
@@ -27,4 +27,3 @@ entries:
     description: "Personal organizizer for links, ideas and tasks."
     logo: /lists/digital_tools/notion.svg
     url: https://notion.so
-

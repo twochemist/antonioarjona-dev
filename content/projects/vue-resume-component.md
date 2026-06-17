@@ -1,9 +1,9 @@
 ---
 title: Leatlef Map App
-img: leaflet.png
+img: leaflet.PNG
 alt: Logo of vue-resume-component
 prio: 90
-status: 1
+status: 2
 links:
     -
         title: Preview

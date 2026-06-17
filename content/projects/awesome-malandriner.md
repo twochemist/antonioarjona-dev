@@ -1,6 +1,6 @@
 ---
 title: Awesome Malandriner Links
-img: malandrinerlinks.png
+img: malandrinerlinks.PNG
 alt: Picture with awesome links for web development.
 prio: 70
 status: 2

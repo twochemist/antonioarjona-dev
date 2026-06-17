@@ -7,7 +7,7 @@
         "location": "Thüringen, Germany",
         "from": "09/2003",
         "to": "09/2004",
-        "description": "Fakultät für Chemie 5.S/6.S"
+        "description": "Diplom Chemie 5.S/6.S, Spectroscopy"
       },
       {
         "title": "University of Granada",
@@ -18,11 +18,12 @@
         "description": "MSc in Chemistry"
       },
       {
-        "title": "Polymers Materials Technology ",
-        "position": "UNED",
+        "title": "National University",
         "location": "Madrid, Spain",
+        "position": "UNED",
         "from": "07/2006",
-        "to": "07/2009"
+        "to": "07/2009",
+        "description": "Postgraduate Program in Polymer Science and Technology"
       }
     ]
   },

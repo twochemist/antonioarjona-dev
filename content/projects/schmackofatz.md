@@ -1,9 +1,9 @@
 ---
 title: Manufacturing Operation Intelligence
-img: oee.png
+img: OEE.png
 alt: The map screen of Zumba Fitness activities.
 prio: 200
-status: 2
+status: 1
 links:
     -
         title: Mockup 1

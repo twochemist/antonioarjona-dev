@@ -1,7 +1,7 @@
 ---
 title: Automotive Electromagnetic Compatibility
 description: Overview of EMC Testing & Setup.
-image: /posts/my-perfect-homeoffice-conference-call-and-podcasting-setup/setup_overview.png
+image: /posts/my-perfect-homeoffice-conference-call-and-podcasting-setup/setup_overview.PNG
 alt: EMC Testing.
 publishedAt: 2021-01-10
 tags: 
