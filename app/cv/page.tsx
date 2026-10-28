@@ -2,7 +2,7 @@ import { getCv } from '@/lib/content'
 import { SectionHeader } from '@/ui/SectionHeader'
 
 export const metadata = {
-  title: 'CV',
+  title: 'Experience & education',
   description: 'Antonio Arjona CV and professional profile.',
 }
 
@@ -13,6 +13,7 @@ type CvEntry = {
   from?: string
   to?: string
   description?: string
+  url?: string
 }
 
 type CvSegment = {
@@ -38,9 +39,9 @@ export default function CvPage() {
           />
         ) : null}
         <SectionHeader
-          eyebrow="CV"
+          eyebrow="Experience & education"
           title={cv.information.name}
-          description="Industrial software, supplier development, manufacturing operations, electronics and web technology."
+          description="A background in automotive manufacturing, supplier development and electronics, complemented by ongoing frontend and DevOps studies."
         />
       </section>
 
@@ -58,7 +59,7 @@ export default function CvPage() {
                   key={`${entry.title}-${index}`}
                 >
                   <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:justify-between">
-                    <h3 className="text-lg font-black">{entry.title}</h3>
+                    <h3 className="text-lg font-black">{entry.url ? <a className="hover:text-clay" href={entry.url}>{entry.title} ↗</a> : entry.title}</h3>
                     <p className="text-sm font-bold text-clay">
                       {[entry.from, entry.to].filter(Boolean).join(' - ')}
                     </p>

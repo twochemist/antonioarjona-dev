@@ -20,6 +20,7 @@ export type Project = {
   alt?: string
   prio: number
   status: number
+  kind: string
   links: Link[]
   responsibilities: string[]
   html: string
@@ -135,10 +136,11 @@ export function getProjects(): Project[] {
       alt: asString(data.alt),
       prio: asNumber(data.prio),
       status: asNumber(data.status, 2),
+      kind: asString(data.kind, asNumber(data.status, 2) === 1 ? 'Portfolio project' : 'Archived project'),
       links: asLinks(data.links),
       responsibilities: asStringArray(data.responsibilities),
       html: renderMarkdown(body),
-      excerpt: stripMarkdown(body).slice(0, 180),
+      excerpt: asString(data.summary) || stripMarkdown(body).slice(0, 180),
     }))
     .sort((a, b) => b.prio - a.prio)
 }

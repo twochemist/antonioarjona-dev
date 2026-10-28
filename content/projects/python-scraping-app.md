@@ -1,25 +1,26 @@
 ---
-title: Python Scrapping App
+title: Python Web Scraper
+summary: A Python portfolio project for collecting market data from web pages and preparing it for analysis.
 img: pythonscrapping.png
-alt: A screenshot of the Python project.
-prio: 1000
+alt: Screenshot of the Python market-data scraping project
+prio: 250
 status: 1
+kind: Portfolio project
 links:
-    -
-        title: Website
-        url: https://github.com/twochemist/bolsa-scraper
-    -
-        title: GitHub
-        url: https://github.com/twochemist/bolsa-scraper
-
-
-responsibilities: 
-    - Data Analysis
-    - Web App
-    - Python Developer
+  - title: Source on GitHub
+    url: https://github.com/twochemist/bolsa-scraper
+responsibilities:
+  - Python
 ---
 
-Python programming with Data Analytics and Machine Learning using data from the internet. That data may only be available on a webpage, so for cases like this I used a special technique called web scraping to gather the data to do analysis. This tool is specially useful for trading and stocks visualization through automatization. 
+## Purpose
 
+Explore how market data available on web pages can be collected and prepared for analysis with Python.
 
+## Scope
 
+This project brings together web scraping and data preparation. The source repository is the evidence for the implementation; it is linked here for inspection.
+
+## Current state
+
+An exploratory portfolio project. It does not claim a production trading service, a validated forecasting model or investment performance.

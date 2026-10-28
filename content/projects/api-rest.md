@@ -1,16 +1,12 @@
 ---
-title: API Rest with PHP
+title: REST API with PHP
+summary: An archived PHP learning project exploring API-key requests and database access.
+kind: Archived project
 img: apirest.png
-alt: API Rest
+alt: Illustration of the PHP REST API project
 prio: 80
 status: 2
-links:
-    -
-        title: Website
-        url: 
-    -
-        title: Github
-        url: 
+links: []
 responsibilities:
     - Server Communication
     - Process Automation

@@ -15,8 +15,8 @@ export default function ProjectsPage() {
     <main className="space-y-10">
       <SectionHeader
         eyebrow="Portfolio"
-        title="Selected Projects"
-        description="A curated view of software, industrial dashboards, automation and creative technology projects."
+        title="Projects & design studies"
+        description="Working portfolio software, electronics concepts and industrial workflows. Each case explains its scope, technical decisions and current state."
       />
       <div className="grid gap-5">
         {projects.map((project) => (
@@ -36,7 +36,7 @@ export default function ProjectsPage() {
             <div>
               <div className="flex flex-wrap gap-2">
                 <Badge tone={project.status === 1 ? 'active' : 'muted'}>
-                  {project.status === 1 ? 'Active' : 'Archived'}
+                  {project.kind}
                 </Badge>
                 {project.responsibilities.map((item) => (
                   <Badge key={item}>{item}</Badge>

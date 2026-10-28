@@ -4,7 +4,7 @@ import { Badge } from '@/ui/Badge'
 import { SectionHeader } from '@/ui/SectionHeader'
 
 export const metadata = {
-  title: 'Blog',
+  title: 'Writing',
   description: 'Articles and notes by Antonio Arjona.',
 }
 
@@ -15,9 +15,10 @@ export default function PostsPage() {
     <main className="space-y-10">
       <SectionHeader
         eyebrow="Writing"
-        title="Blog"
-        description="Notes about software, industrial technology, electronics, tooling and experiments."
+        title="Writing archive"
+        description="Earlier technical notes on software, electronics and making. New essays are published on Programmable."
       />
+      <a className="inline-block text-sm font-black text-clay" href="https://programmablelog.substack.com/">Read Programmable on Substack →</a>
       <div className="grid gap-4">
         {posts.map((post) => (
           <Link

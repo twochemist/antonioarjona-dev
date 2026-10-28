@@ -31,7 +31,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         </h1>
         <div className="mt-5 flex flex-wrap gap-2">
           <Badge tone={project.status === 1 ? 'active' : 'muted'}>
-            {project.status === 1 ? 'Active' : 'Archived'}
+            {project.kind}
           </Badge>
           {project.responsibilities.map((item) => (
             <Badge key={item}>{item}</Badge>

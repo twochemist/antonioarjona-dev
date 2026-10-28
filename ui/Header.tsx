@@ -7,9 +7,9 @@ import { useEffect, useState } from 'react'
 const navItems = [
   { href: '/', label: 'Home' },
   { href: '/projects', label: 'Projects' },
-  { href: '/lists', label: 'Uses' },
-  { href: '/posts', label: 'Blog' },
-  { href: '/cv', label: 'CV' },
+  { href: '/cv', label: 'Experience' },
+  { href: '/about', label: 'About' },
+  { href: '/posts', label: 'Writing' },
 ]
 
 export function Header() {

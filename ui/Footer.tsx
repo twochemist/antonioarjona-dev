@@ -26,9 +26,9 @@ export function Footer() {
         <li>
           <a
             className="rounded-full px-3 py-2 transition hover:bg-mist hover:text-clay dark:hover:bg-white/10 dark:hover:text-white"
-            href=""
+            href="https://www.linkedin.com/in/antonio-manuel-arjona/"
           >
-            Contact
+            Get in touch
           </a>
         </li>
       </ul>
