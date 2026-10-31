@@ -1,6 +1,6 @@
 ---
 title: Supplier Risk Board
-summary: A frontend portfolio application for reviewing supplier issues, prioritising risk and tracking actions using simulated manufacturing data.
+summary: Bringing supplier issues, risk priorities and next actions into one view. A working frontend portfolio app using simulated manufacturing data.
 img: supplier-risk-board.svg
 alt: Supplier Risk Board interface with risk indicators and supplier issues
 prio: 500
@@ -17,7 +17,9 @@ responsibilities:
 
 ## The problem
 
-Supplier issues involve more than a status. Quality, manufacturing and supply teams need to understand the risk, the next action and the due date. This portfolio application explores how to make that information easier to review in one place.
+When several suppliers have open issues, quality problems, delivery delays and corrective actions can end up spread across spreadsheets, emails and meeting notes. It becomes harder to see what puts production at risk and who needs to act next.
+
+My work in supplier qualification led me to explore a simpler review workflow. Supplier Risk Board brings issues into one view so a team can ask: what needs attention first, what action is due, and what is still open?
 
 ## Scope and contribution
 
@@ -35,6 +37,10 @@ My contribution is the frontend application and its issue-review workflow, apply
 ## Evidence and current state
 
 The source repository is linked alongside this case study. This is a portfolio application using mock manufacturing data. The create-issue workflow runs locally; the project does not claim a production deployment, persistent shared storage or integration with a live supplier system.
+
+## What this version helps me explore
+
+Keeping the data in local React state lets me focus on the review workflow before introducing shared storage. The question is whether the interface makes priorities and next actions clear; it does not yet test how a team would use it together.
 
 ## Next iteration
 

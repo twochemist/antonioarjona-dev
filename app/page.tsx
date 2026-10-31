@@ -13,16 +13,17 @@ export default function Home() {
             Antonio Arjona / Industrial technology & software / Germany
           </p>
           <h1 className="max-w-3xl text-5xl font-black leading-none tracking-tight text-ink md:text-7xl dark:text-white">
-            Industrial experience. Practical software.
+            I build software for problems I know from the factory floor.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-ink/65 dark:text-white/65">
-            I bring a background in automotive manufacturing, supplier development
-            and electronics to web applications and industrial design studies.
-            My focus is making operational information easier to understand and use.
+            I’m Antonio, based in Germany. I’ve spent more than 20 years in automotive
+            manufacturing, working on supplier qualification, production processes
+            and components. Today, I also build software to explore better ways
+            of working with that information.
           </p>
           <p className="mt-4 max-w-2xl text-sm leading-7 text-ink/65 dark:text-white/65">
-            Currently developing my frontend and DevOps skills with Lemoncode,
-            alongside a career working with components, production processes and quality.
+            This is where I share what I’m building and learning: web applications
+            for supplier operations, and design studies in electronics and automation.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link className="rounded-full bg-ink px-5 py-3 text-sm font-black text-white transition hover:bg-clay dark:bg-white dark:text-ink dark:hover:bg-clay dark:hover:text-white" href="/projects">
@@ -43,9 +44,9 @@ export default function Home() {
 
       <section className="grid border-y border-ink/10 dark:border-white/10 md:grid-cols-3">
         {[
-          ['Industrial context', 'Experience in supplier development, component qualification, manufacturing and automotive lighting.'],
-          ['Practical software', 'Web interfaces and data tools that turn operational questions into something people can work with.'],
-          ['Electronics & systems', 'An interest in sensing, embedded software and the path from a physical signal to a useful interface.'],
+          ['Currently building with', 'TypeScript, React and Next.js for web interfaces, with Python for data collection and scripting.'],
+          ['Exploring', 'Full-Stack development, DevOps, embedded systems and industrial communication.'],
+          ['Industrial background', 'Automotive manufacturing, supplier qualification, production processes, quality and lighting electronics.'],
         ].map(([title, text]) => (
           <article className="border-ink/10 p-6 dark:border-white/10 md:border-r md:last:border-r-0" key={title}>
             <h2 className="text-lg font-black">{title}</h2>
@@ -58,7 +59,7 @@ export default function Home() {
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="mb-3 text-xs font-black uppercase tracking-[0.2em] text-clay">Selected work</p>
-            <h2 className="max-w-3xl text-4xl font-black leading-tight md:text-5xl">From industrial questions to technical decisions.</h2>
+            <h2 className="max-w-3xl text-4xl font-black leading-tight md:text-5xl">Questions from industry. Projects I’m working on.</h2>
             <p className="mt-4 max-w-2xl text-sm leading-7 text-ink/65 dark:text-white/65">A working portfolio application and two original concept designs exploring electronics and shopfloor workflows.</p>
           </div>
           <Link className="text-sm font-black text-clay" href="/projects">All projects & studies</Link>
@@ -93,7 +94,7 @@ export default function Home() {
           <h2 className="text-4xl font-black leading-tight">Thinking through technology.</h2>
         </div>
         <div className="space-y-4">
-          <p className="text-base leading-8 text-ink/65 dark:text-white/65">I write in English about software, industrial systems and the decisions behind them. Programmable is where I explore these questions; this site also keeps an archive of earlier technical notes.</p>
+          <p className="text-base leading-8 text-ink/65 dark:text-white/65">I use writing to think through software, electronics and industrial systems: what I’ve tried, what I’m investigating and what I still need to understand. You can find my notes here and on Programmable.</p>
           <div className="flex flex-wrap gap-6 text-sm font-black text-clay">
             <a href="https://programmablelog.substack.com/">Read Programmable →</a>
             <Link href="/posts">Browse the writing archive →</Link>
@@ -104,8 +105,8 @@ export default function Home() {
       <section className="grid items-center gap-6 rounded-lg bg-ink p-8 text-white md:grid-cols-[1fr_auto]">
         <div>
           <p className="mb-3 text-xs font-black uppercase tracking-[0.2em] text-clay">Get in touch</p>
-          <h2 className="text-3xl font-black">Working where industry meets software?</h2>
-          <p className="mt-3 max-w-2xl text-sm leading-7 text-white/70">I welcome conversations about industrial tools, electronics, web development and practical projects. You can reach me on LinkedIn.</p>
+          <h2 className="text-3xl font-black">Have something interesting in mind?</h2>
+          <p className="mt-3 max-w-2xl text-sm leading-7 text-white/70">If you’re working on manufacturing tools, electronics or a software idea connected to industrial work, I’d enjoy hearing about it. You can reach me on LinkedIn.</p>
         </div>
         <a className="rounded-full bg-white px-5 py-3 text-sm font-black text-ink transition hover:bg-clay hover:text-white" href="https://www.linkedin.com/in/antonio-manuel-arjona/">Connect on LinkedIn</a>
       </section>

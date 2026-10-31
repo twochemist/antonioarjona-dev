@@ -15,7 +15,9 @@ responsibilities:
 
 ## The operational question
 
-A machine signal can tell a team when a process stopped. It rarely explains the whole reason. This design study asks how machine events and operator context could form a useful, reviewable downtime record.
+A machine signal can tell a team when a process stopped. It rarely explains the whole reason. Someone still needs to add the context: a material shortage, a changeover or a fault that needs investigating.
+
+My manufacturing background is why I’m interested in that gap. This study explores how machine events and operator explanations could form a downtime record a team can review at the end of a shift. The focus is the event-to-review workflow, rather than a dashboard of production KPIs.
 
 **Current state: concept design for a fictional production cell.** The case contains a proposed workflow, data model and validation plan. There is no live PLC connection, deployed automation system or measured production improvement.
 

@@ -37,10 +37,10 @@
     ]
   },
   {
-    "title": "Current professional development",
+    "title": "What I'm Up To Now",
     "entries": [
       {
-        "title": "Máster Front End",
+        "title": "Master Front End",
         "position": "Lemoncode",
         "to": "In progress",
         "url": "https://www.lemoncode.net/cursos/master-front-end.html",
@@ -52,6 +52,12 @@
         "to": "In progress",
         "url": "https://www.lemoncode.net/cursos/bootcamp-devops.html",
         "description": "Practical DevOps training covering containers and orchestration, cloud infrastructure, infrastructure as code, CI/CD and observability. Programme topics include Docker, Kubernetes, Terraform, GitHub Actions, Jenkins, Prometheus and Grafana."
+      },
+      {
+        "title": "Coding Camp JavaScript",
+        "position": "Lemoncode",
+        "url": "https://lemoncode.thinkific.com/courses/bootcamp-javascript",
+        "description": "Hands-on JavaScript training focused on programming fundamentals: variables, control flow, functions, arrays and objects. Browser exercises connect HTML and CSS with DOM manipulation and event handling to build interactive web interfaces."
       }
     ]
   },
@@ -72,7 +78,7 @@
         "location": "Granada, Spain",
         "from": "09/1998",
         "to": "09/2004",
-        "description": "MSc in Chemistry"
+        "description": "MSc in Chemistry, specialising in Physical Chemistry and Spectroscopy."
       },
       {
         "title": "Friedrich-Schiller-Universität Jena (FSU)",

@@ -11,11 +11,11 @@ export const metadata: Metadata = {
     template: '%s - Antonio Arjona',
   },
   description:
-    'Antonio Arjona: industrial experience, electronics and practical software. Explore portfolio projects, engineering design studies and a career in automotive manufacturing.',
+    'Antonio Arjona brings over 20 years in automotive manufacturing to software projects for supplier operations, electronics and industrial workflows.',
   openGraph: {
     title: 'Antonio Arjona',
     description:
-      'Industrial experience. Practical software. Web applications, electronics concepts and industrial design studies by Antonio Arjona.',
+      'I build software for problems I know from the factory floor. Web applications and design studies informed by over 20 years in automotive manufacturing.',
     url: 'https://antonioarjona.dev',
     siteName: 'Antonio Arjona',
     images: ['/profil.jpg'],

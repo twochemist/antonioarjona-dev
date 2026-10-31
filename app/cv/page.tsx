@@ -41,7 +41,7 @@ export default function CvPage() {
         <SectionHeader
           eyebrow="Experience & education"
           title={cv.information.name}
-          description="A background in automotive manufacturing, supplier development and electronics, complemented by ongoing frontend and DevOps studies."
+          description="A background in automotive manufacturing, supplier development and electronics."
         />
       </section>
 

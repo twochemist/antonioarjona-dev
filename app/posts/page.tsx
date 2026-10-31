@@ -16,7 +16,7 @@ export default function PostsPage() {
       <SectionHeader
         eyebrow="Writing"
         title="Writing archive"
-        description="Earlier technical notes on software, electronics and making. New essays are published on Programmable."
+        description="Technical notes on software, electronics and the questions I’m working through."
       />
       <a className="inline-block text-sm font-black text-clay" href="https://programmablelog.substack.com/">Read Programmable on Substack →</a>
       <div className="grid gap-4">

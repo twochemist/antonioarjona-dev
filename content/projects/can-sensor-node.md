@@ -15,7 +15,9 @@ responsibilities:
 
 ## Design brief
 
-How could a small sensor module make commissioning and fault diagnosis easier on a bench-scale machine? This original design study proposes a reusable acquisition node with clear channel status and a documented message format.
+A sensor reading is only useful if you can tell whether it is current and valid. My background in electronics and analytical instruments makes me interested in what happens between a physical signal and the value someone sees on screen.
+
+This study asks how a small acquisition module could make commissioning and fault diagnosis easier on a bench-scale machine. I’m exploring a reusable node with clear channel status and a documented message format.
 
 **Current state: concept design.** The deliverables are this technical brief, the architecture diagram and the validation plan. A PCB, firmware and hardware measurements have not yet been produced.
 
