@@ -13,7 +13,7 @@ export default function Home() {
             Antonio Arjona
           </p>
           <h1 className="max-w-3xl text-5xl font-black leading-none tracking-tight text-ink md:text-7xl dark:text-white">
-            I like building things with software and electronics.
+            <em>Hardware</em>, <em>Software</em>, and <em>Everything in Between</em>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-ink/65 dark:text-white/65">
             I’m Antonio, based in Germany. I build web tools and explore how
@@ -23,9 +23,6 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap gap-3">
             <Link className="rounded-full bg-ink px-5 py-3 text-sm font-black text-white transition hover:bg-clay dark:bg-white dark:text-ink dark:hover:bg-clay dark:hover:text-white" href="/projects">
               Explore my work
-            </Link>
-            <Link className="rounded-full border border-ink/15 px-5 py-3 text-sm font-black text-ink transition hover:border-clay hover:text-clay dark:border-white/20 dark:text-white" href="/about">
-              About me
             </Link>
           </div>
         </div>
@@ -60,26 +57,14 @@ export default function Home() {
 
       <section className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
-          <p className="mb-3 text-xs font-black uppercase tracking-[0.2em] text-clay">About</p>
-          <h2 className="text-4xl font-black leading-tight">From chemistry to software and electronics</h2>
-        </div>
-        <div className="space-y-4 text-base leading-8 text-ink/65 dark:text-white/65">
-          <p>I studied chemistry and spent more than 20 years in automotive manufacturing, from exterior lighting development to supplier qualification. That experience still shapes what I build, whether I’m thinking about how to read a sensor or how to make a dashboard easier to use.</p>
-          <p>Away from the screen, I enjoy making things by hand and tinkering with electronics.</p>
-          <Link className="inline-block text-sm font-black text-clay" href="/about">More about my background →</Link>
-        </div>
-      </section>
-
-      <section className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
-        <div>
-          <p className="mb-3 text-xs font-black uppercase tracking-[0.2em] text-clay">Writing</p>
-          <h2 className="text-4xl font-black leading-tight">Thinking through technology.</h2>
+          <p className="mb-3 text-xs font-black uppercase tracking-[0.2em] text-clay">Blog</p>
+          <h2 className="text-4xl font-black leading-tight">software and electronics</h2>
         </div>
         <div className="space-y-4">
           <p className="text-base leading-8 text-ink/65 dark:text-white/65">I use writing to think through software, electronics and industrial systems: what I’ve tried, what I’m investigating and what I still need to understand. You can find my notes here and on Programmable.</p>
           <div className="flex flex-wrap gap-6 text-sm font-black text-clay">
             <a href="https://programmablelog.substack.com/">Read Programmable →</a>
-            <Link href="/posts">Browse the writing archive →</Link>
+            <Link href="/posts">Browse the blog →</Link>
           </div>
         </div>
       </section>

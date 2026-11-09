@@ -6,6 +6,6 @@ I build portfolio web applications and explore electronics and automation throug
 
 I am developing my frontend and DevOps skills through Lemoncode’s Máster Front End and Bootcamp Devops.
 
-Explore my [projects](/projects/), [professional experience](/cv/) and [background](/about/). I write in English on [Programmable](https://programmablelog.substack.com/) and keep an [archive of earlier technical notes](/posts/).
+Explore my [projects](/projects/) and [professional experience](/cv/). I write in English on [Programmable](https://programmablelog.substack.com/) and keep an [archive of earlier technical notes](/posts/).
 
 For professional conversations, [connect with me on LinkedIn](https://www.linkedin.com/in/antonio-manuel-arjona/).
