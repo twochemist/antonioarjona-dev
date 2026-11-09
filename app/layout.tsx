@@ -11,11 +11,11 @@ export const metadata: Metadata = {
     template: '%s - Antonio Arjona',
   },
   description:
-    'Antonio Arjona brings over 20 years in automotive manufacturing to software projects for supplier operations, electronics and industrial workflows.',
+    'Personal projects and notes by Antonio Arjona on web tools, electronics and automation.',
   openGraph: {
     title: 'Antonio Arjona',
     description:
-      'I build software for problems I know from the factory floor. Web applications and design studies informed by over 20 years in automotive manufacturing.',
+      'Personal projects and notes by Antonio Arjona on web tools, electronics and automation.',
     url: 'https://antonioarjona.dev',
     siteName: 'Antonio Arjona',
     images: ['/profil.jpg'],
