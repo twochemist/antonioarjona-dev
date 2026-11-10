@@ -1,8 +1,8 @@
 ---
-title: HexaGlow — Modular WLED Wall Light
+title: HexaGlow Wall Light
 summary: A modular wall-light concept with 3D-printed hexagons, addressable LEDs and music-reactive scenes on an ESP32.
-img: hexaglow/warm.jpg
-alt: Concept render of graphite hexagonal wall lights glowing amber above a wooden desk
+img: hexaglow/music.jpg
+alt: Concept render of graphite hexagonal wall lights glowing blue and violet above a wooden desk
 prio: 475
 status: 2
 kind: Concept design
@@ -17,82 +17,88 @@ responsibilities:
   - Embedded configuration
 ---
 
-## Summary
+## Overview
 
-HexaGlow explores how a wall light made from seven 3D-printed hexagons could work as warm ambient lighting or react to music. An ESP32 running WLED controls the addressable LEDs, while an opal diffuser softens the light from each module.
+HexaGlow is a personal project exploring modular lighting using 3D-printed hexagons, addressable LEDs, and an ESP32.
 
-**Current state: concept design.** The OpenSCAD file contains the proposed module geometry. The gallery contains AI-generated concept renders. Hardware testing and photographs are planned for the bench prototype.
+The idea is to build a wall light that can provide soft, warm ambient lighting or respond to music. Each hexagon has an opal diffuser to create an even glow rather than showing individual LED points.
 
-## Backstory
+The system will run on WLED, allowing me to control colors, brightness, and effects over Wi-Fi.
 
-Working on automotive lighting made me curious about what happens between an LED and the surface you actually see. With HexaGlow, I wanted to explore that on a smaller scale. How far should the diffuser sit from the LEDs before the individual points of light blend together?
+**Project status:** Still in the design phase. I’ve created the initial geometry in OpenSCAD and printed the first module. I’m starting to test its lighting performance.
 
-## Objectives
+## Why I Started This Project
 
-1. Compare 12 mm and 16 mm between the proposed LED plane and the diffuser. Photograph both with the same exposure and compare visible hotspots and dark corners.
-2. Check whether the diffuser can be lifted out and the strip reached without disturbing the adjacent modules.
-3. Run a warm static scene and a music-reactive scene on one module, then check power and segment mapping on three connected modules.
+I was interested in how light behaves inside an opal diffuser.
 
-## Features
+There’s quite a bit happening between an LED and the illuminated surface we eventually see. The distance to the diffuser, the materials, and even the internal geometry can make a big difference.
 
-- A 145 mm flat-to-flat graphite hexagon with a recessed opal diffuser and a rear cable opening.
-- Addressable LEDs and Wi-Fi controls through the WLED web interface.
-- A digital I²S microphone for music-reactive effects.
-- A parametric OpenSCAD model with adjustable depth and diffuser clearance. Mounting and diffuser retention still need to be designed and tested.
+With HexaGlow, I wanted to answer one question. **How much space do I need between the LEDs and the diffuser to get a smooth, uniform light?**
 
-## Pinout & Wiring
+## What I Want to Test
 
-Proposed signals for a classic ESP32 with an INMP441 microphone and a 5 V addressable RGB strip. Confirm the exact board pinout before wiring.
+I’ll start with a single hexagon and focus on the following.
 
-- **LED data** — GPIO 18 → 5 V logic-level shifter → first strip DIN.
-- **Microphone clock and frame sync** — GPIO 26 → SCK/BCLK, GPIO 25 → WS.
-- **Microphone data** — GPIO 32 ← SD. Connect L/R to GND to select the left channel.
-- **Power and ground** — Supply the microphone from 3.3 V and the strip from a regulated 5 V supply sized and fused for the intended load. Connect controller, shifter, microphone and strip grounds. Power the controller through its supported input.
+- **Light uniformity:** Test LED-to-diffuser distances of 12 mm and 16 mm. I’ll photograph both setups using identical camera settings to compare hotspots, shadows, and overall uniformity.
+- **Assembly and maintenance:** Make sure I can remove the diffuser and access the LED strip without taking the whole installation apart.
+- **Lighting effects:** Start with a simple warm white scene, then experiment with music-reactive effects.
+- **System integration:** Connect three modules to check power distribution, wiring, and WLED segment configuration before expanding to seven.
 
-![Proposed signal flow from the I²S microphone through the ESP32 to the addressable LED strip](/projects/hexaglow/wiring.svg)
+## The Design
 
-In WLED, set the LED output to GPIO 18 and enter the measured pixel count. Enable Generic I²S audio, enter the three microphone GPIOs and restart the controller. The current limit will be set after confirming the strip and supply. [WLED wiring guide](https://kno.wled.ge/basics/getting-started/) · [Audio Reactive WLED](https://kno.wled.ge/advanced/audio-reactive/)
+Each module is a 145 mm hexagon measured flat to flat, with a 3D-printed housing.
 
-## WLED Configuration & Code
+The design includes space for the LED strip and an opening at the back for cable routing.
 
-The warm scene sends a solid amber colour to segment 0 on the local WLED controller. Replace `WLED_IP` with the controller address.
+I’m using OpenSCAD to keep the geometry parametric. That makes it easy to adjust the module depth, diffuser position, and internal clearances as I learn from the first prints.
 
-```bash
-curl -X POST "http://WLED_IP/json/state" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "on": true,
-    "bri": 64,
-    "seg": [{
-      "id": 0,
-      "fx": 0,
-      "col": [[255, 168, 80]]
-    }]
-  }'
-```
+The mounting system and diffuser retention still need some work. I’d like to find a solution that’s simple to assemble and makes maintenance easy.
 
-For the music scene, choose an audio-reactive effect and a blue-violet palette in WLED. Save it as preset 2 to recall it with this JSON request body.
+## Electronics & Control
 
-```json
-{"on": true, "ps": 2}
-```
+- **ESP32:** Handles LED control and Wi-Fi connectivity.
+- **WLED:** Provides the web interface, lighting effects, and segment control.
+- **Addressable RGB LEDs:** Allow individual control of the LEDs inside each module.
+- **INMP441 microphone:** Adds the option of music-reactive lighting.
+- **5 V power supply:** Powers the LED strips, with capacity and protection selected according to the final load.
 
-These examples describe the planned bench setup. The final preset export will record the tested effect, microphone gain and LED segment boundaries. [WLED JSON API](https://kno.wled.ge/interfaces/json-api/)
+I plan to keep the wiring accessible so I can troubleshoot or replace components without dismantling the entire light.
+
+## Proposed Wiring
+
+The proposed connections for the first prototype use a standard ESP32 development board.
+
+| Function | ESP32 pin | Connection |
+| --- | --- | --- |
+| LED data | GPIO 18 | Through a 5 V logic-level shifter to the strip DIN |
+| Microphone bit clock | GPIO 26 | INMP441 SCK/BCLK |
+| Microphone word select | GPIO 25 | INMP441 WS |
+| Microphone data | GPIO 32 | INMP441 SD |
+| Microphone power | 3.3 V | INMP441 VDD |
+| Ground and channel selection | GND | INMP441 GND and L/R to select the left channel |
+
+The LED strip uses a separate regulated 5 V supply, with all grounds connected together. The ESP32 will be powered through its supported input.
+
+I confirmed the pin assignments and power requirements against the actual components before wiring everything.
+
+## Next Steps
+
+The first milestone is a working hexagon on my electronics bench.
+
+I’ve printed the housing. Next I’ll install the LEDs and compare the two diffuser distances. Once I have measurements and photographs, I’ll update this page with the results, including anything that didn’t work as expected.
+
+If the first module performs well, I’ll move on to a three-module setup before building the complete seven-hexagon wall light.
+
+For now, the images shown here are concept renders, not photographs of a finished prototype.
 
 ## Gallery
 
-The amber image at the top shows the intended desk scene.
-
 <figure>
-  <img src="/projects/hexaglow/music.jpg" alt="Hexagonal wall light modules in a blue and violet lighting scene" loading="lazy" width="1440">
-  <figcaption>Concept render · blue and violet music scene.</figcaption>
+  <img src="/projects/hexaglow/warm.jpg" alt="Hexagonal wall light modules glowing amber above a wooden desk" loading="lazy" width="1440">
+  <figcaption>Concept render · warm ambient scene.</figcaption>
 </figure>
 
 <figure class="mt-8">
   <img src="/projects/hexaglow/module.jpg" alt="Exploded view of a hexagonal wall light showing the diffuser, LED strip and graphite housing" loading="lazy" width="1440">
   <figcaption>Concept illustration · one module separated into diffuser, LED strip and housing.</figcaption>
 </figure>
-
-## Inspiration
-
-The starting point was the [hexagonal WLED wall light on Instructables](https://www.instructables.com/Hexagon-WLED-Wall-Light-Art-3D-Printed-ESP32-Sound/). HexaGlow uses its own module geometry, layout and concept imagery.
